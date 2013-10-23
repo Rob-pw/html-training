@@ -1,0 +1,33 @@
+html {
+	width: 100%; 
+}
+
+html body {
+	width: inherit;
+	background-color: #e3e3e3;
+	font-family: sans-serif; 
+}
+
+.container {
+	min-width: 345px;
+	width: 70%;
+	display: block;
+	margin: 0 auto; 
+}
+
+body > header {
+	font-size: 25px; 
+}
+
+section header {
+	font-size: 21px;
+}
+
+.quotes blockquote {
+	border: 2px solid white;
+	text-align: center;
+	margin: 0;
+	margin-bottom: 20px;
+	padding: 1em;
+	width: 100%; 
+}
