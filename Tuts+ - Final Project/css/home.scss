@@ -1,0 +1,227 @@
+* {
+	/* Outline for all elements, adds no width */
+	/*box-shadow: 0 0 1px red;*/
+}
+
+$default-font-family: 'sans-serif';
+$color-dark-grey: #353535;
+$small-browser : "(max-width: 800px)";
+$banner-min-height: 125px;
+$banner-height: 30%;
+
+.fullWidth {
+	width: 100%;
+}
+
+a:link {
+	color: black;
+}
+
+a:visited {
+	color: black;
+}
+
+.container {
+	min-width: 600px;
+	width: 70%;
+	margin: 1em auto 0em;
+	height: calc(100% - 2em);
+
+	@media #{$small-browser} {
+		width: 95%;
+	}
+
+	.content {
+		display: inline-block;
+
+		.mainContent {
+		    width: 69%;
+		    margin-right: 1%;
+		    display: inline-block;
+		    float: left;
+
+		    @media #{$small-browser} {
+		    	width: 100%;
+		    	margin-right: none;
+		    }
+		}
+	}
+
+	header.websiteHeader {
+		height: 10%;
+
+		h1 {
+			font-size: 36px;
+			float: left;
+
+			span {
+				font-weight: bold;
+			}
+		}
+
+		nav {
+			ul {
+				list-style: none;
+				float: right;
+				margin-top: 1em;
+
+				li {
+					display: inline-block;
+					font-size: 16px;
+					margin-right: 1em;
+					text-transform: lowercase;
+					float:left;
+
+					a {
+						text-decoration: none;
+						font-family: $default-font-family;
+
+						&:link {
+							color: grey;
+						}
+
+						&:hover {
+							color: darkgrey;
+						}
+
+						&.active {
+							color: black;
+						}
+					}
+				}
+			}	
+		}
+	}
+
+	.mainContent {
+		header.banner {
+			position: relative;
+			min-height: $banner-min-height;
+			height: $banner-height;
+
+			div.bannerImage {
+				display: inline-block;
+				float: left;
+
+				width: 100%;
+				height: 100%;
+				margin-right: 3%;
+				background-image: url(http://lorempixel.com/1024/700/city/);
+				background-size: cover;
+				background-position: 50% 50%;
+				overflow: hidden;
+
+				p {
+					width: 60%;
+					position: absolute;
+					bottom: 0.5em;
+					left: 0.5em;
+					word-wrap: break-word;
+					background-color: rgba(0, 0, 0, 0.38);
+					color: white;
+					text-shadow: 1px 1px 1px black;
+					font-size: 21px;
+					padding: 0 3px;
+					text-transform: lowercase;
+					font-family: $default-font-family;
+					line-height: 1.5;
+				}
+			}	
+		}
+
+		section.infoPill {
+			margin-right: 0.5em;
+			display: inline-block;
+			width: calc(50% - 0.5em);
+			float: left;
+
+			header {
+				font-size: 25px;
+				font-weight: semibold;
+				font-family: $default-font-family;
+				text-transform: lowercase;
+				margin: 1em inherit;
+			}
+
+			p {
+				line-height: 1.3em;
+				letter-spacing: 1px;
+			}
+
+			.readMore {
+			    background-color: $color-dark-grey;
+			    padding: 5px 7px;
+			    display: inline-block;
+			    margin: 1em 0;
+
+			    a {
+			    	color: white;
+					text-transform: uppercase;
+					text-decoration: none;
+					font-size: 12px;
+			    }
+			}
+		}
+	}
+
+	aside.sidebar {
+		width: 30%;
+		height: 100%;
+		display: inline-block;
+		float: left;
+
+		@media #{$small-browser} {
+			display: none;
+		}
+
+		.blackbox { 
+			display: block;
+
+			width: 100%%;
+			min-height: $banner-min-height;
+			height: $banner-height;
+			background-color: $color-dark-grey;
+		}
+
+		blockquote {
+		    position: relative;
+		    padding: 5px;
+		    margin: 5px;
+		    margin-top: 2em;
+
+			&:before {
+			    content: "\201C";
+			    position: absolute;
+			    top: -10%;
+			    right: 100%;
+			    font-size: 35px;
+			    color: grey;
+			}
+		
+			&:after {
+			    content: "\201D";
+			    position: absolute;
+			    left: 100%;
+			    top: 75%;
+			    font-size: 35px;
+			    color: grey;
+			}
+		}
+
+		address.author {
+			text-align: right;
+
+			a {
+				text-decoration: none;
+			}
+		}
+		
+	}
+
+	footer.legal {
+		padding-top: 1em;
+		height: 10%;
+		border-top: 1px solid grey;
+	}
+}
+
