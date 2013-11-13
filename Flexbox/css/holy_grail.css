@@ -1,0 +1,22 @@
+.flex {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.flex > * {
+	box-shadow: 0px 0px 1px red;
+	box-sizing: border-box;
+	margin: 1%;
+	padding: 1%;
+}
+
+.person {
+	flex: auto;
+	flex-basis: 15%;
+}
+
+.meEditor {
+	flex-basis: 70%;
+}

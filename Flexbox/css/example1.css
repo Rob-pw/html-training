@@ -1,0 +1,11 @@
+.flex {
+	display: flex;
+	flex-flow: row;
+	justify-content: flex-end;
+	align-items: flex-start;
+}
+
+.flex > * {
+	min-width: 100px;
+	min-height: 100px;
+}
