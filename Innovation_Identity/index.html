@@ -7,11 +7,10 @@
 	<link async rel="stylesheet" type="text/css" href="css/icomoon.css">
 </head>
 <body>
-<!-- TODO: you do not need a wrapper element here.They are wrapped by the body -->
-	<article class="profiles">
-		<header class="mainHeader">
-			<h1 class="whiteText">Innovation Identity</h1>
-		</header>
+	<header class="mainHeader">
+		<h1 class="whiteText">Innovation Identity</h1>
+	</header>
+	<main>
 		<div class="col2 left">
 			<section itemscope itemtype="http://data-vocabulary.org/Person" class="person me vcard" draggable>
 				<figure>
@@ -25,6 +24,7 @@
 					<a href="mailto:me@rob.pw" class="icon-mail" itemprop="email">me@rob.pw</a>
 					<span class="icon-mobile" itemprop="telephone">0800 001066</span>
 					<!-- maybe have this as an inline list instead of div -->
+					<!-- [Rob]: The issue with that approach is that we cannot easily share remaining width amongst children. -->
 					<div class="social">
 						<a href="https://facebook.com" test="facebook" class="icon-facebook" itemprop="url"></a>
 						<a href="https://twitter.com" class="icon-twitter" itemprop="url"></a>
@@ -50,9 +50,13 @@
 					<header>
 						<h1>My Favourite Video</h1>
 					</header>
-					<!-- add different formats -->
-					<!-- add controls and autoplay -->
-					<video src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"></video>
+					<video controls>
+						<source src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" type="video/mp4">
+						<source src="http://video.webmfiles.org/big-buck-bunny_trailer.webm" type="video/webm">
+						<source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.ogv" type="video/ogg">
+						<img src="http://peach.blender.org/wp-content/uploads/bbb-splash.png">
+						<h2>Sorry, your browser does not support HTML5 video</h2>
+					</video>
 				</section>
 				<section class="myBackground">
 					<header>
@@ -61,6 +65,7 @@
 					<form action="">
 						<label for="education">Education
 						<!-- Not sure about the value of datalist in this scenario -->
+						<!-- I was simply experimenting with this new HTML5 element, I think it would be useful when dealing with dynamicly populated data, then provide it as autocomplete for an input. -->
 							<datalist id="educationList">
 								<select name="educationList">
 									<option value="The Minster School, Southwell">0</option>
@@ -74,48 +79,38 @@
 						<table class="checkGroup">
 							<tr>
 								<td>
-								<!-- do not nest inputs in labels--> 
-									<label for="html">
-										<input name="html" type="checkbox" checked>HTML
-									</label>
+									<label for="html">HTML</label>
+									<input name="html" type="checkbox" checked>
 								</td>
 								<td>
-									<label for="javascript">
-										<input name="javascript" type="checkbox" checked>Javascript
-									</label>
+									<label for="javascript">Javascript</label>
+									<input name="javascript" type="checkbox" checked>
 								</td>
 								<td>
-									<label for="python">
-										Python
-									</label>
-									<input name="python" type="checkbox" checked>Python
+									<label for="python">Python</label>
+									<input name="python" type="checkbox" checked>
 								</td>
 								<td>
-									<label for="java">
-										<input name="java" type="checkbox" checked>Java
-									</label>
+									<label for="java">Java</label>
+									<input name="java" type="checkbox" checked>
 								</td>
 							</tr>
 							<tr>
 								<td>
-									<label for="css">
-										<input name="css" type="checkbox" checked>CSS
-									</label>
+									<label for="css">CSS</label>
+									<input name="css" type="checkbox" checked>
 								</td>
 								<td>
-									<label for="php">
-										<input name="php" type="checkbox">PHP
-									</label>
+									<label for="php">PHP</label>
+									<input name="php" type="checkbox">
 								</td>
 								<td>
-									<label for="sql">
-										<input name="sql" type="checkbox" checked>SQL
-									</label>
+									<label for="sql">SQL</label>
+									<input name="sql" type="checkbox" checked>
 								</td>
 								<td>
-									<label for="C++">
-										<input name="C++" type="checkbox">C++
-									</label>
+									<label for="C++">C++</label>
+									<input name="C++" type="checkbox">
 								</td>
 							</tr>
 						</table>
@@ -210,10 +205,9 @@
 			</section>
 		</div>
 		<div class="clearfix"></div>
-		<footer class="mainFooter">
-			<h3 class="whiteText">Created by Rob P. White</h3>
-		</footer>
-	</article>
-	
+	</main>
+	<footer class="mainFooter">
+		<h3 class="whiteText">Created by Rob P. White</h3>
+	</footer>
 </body>
 </html>

@@ -25,12 +25,7 @@
 
 body {
 	background-color: #CCC;
-}
-
-.profiles {
-	transition: width 0.1s linear;
-	width: 70%;
-	margin: 0 auto;
+	margin: 0 15%;
 }
 
 .mainHeader,
@@ -50,7 +45,6 @@ body {
 
 .col2.right {
 	display: flex;
-	height: 800px;
 	flex-flow: row wrap;
 	justify-content: space-between;
 	align-content: space-between;
