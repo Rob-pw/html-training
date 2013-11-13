@@ -3,6 +3,17 @@
 	padding: 0;
 }
 
+body {
+	background-color: #CCC;
+	margin: 0 15%;
+}
+
+/*
+ ********************
+ * =columns
+ ********************
+*/
+
 .col2 {
 	width: 48%;
 }
@@ -21,11 +32,6 @@
 
 .whiteText {
 	color: #CCC;
-}
-
-body {
-	background-color: #CCC;
-	margin: 0 15%;
 }
 
 .mainHeader,
@@ -71,7 +77,8 @@ h1, h2, a, span {
 
 .person {
 	background: #369;
-	min-width: 410px;
+	/*min-width: 410px;*/
+	min-width: 250px;
 	min-height: 135px;
 	height: 18%;
 	display: inline-block;
@@ -134,37 +141,20 @@ h1, h2, a, span {
 	box-shadow: 0px 0px 1px white;
 }
 
-.person .social a[href*="facebook"] {
+.person .social a[href*="//facebook.com"] {
 	background-color: #23476A;
 }
 
-.person .social a[href*="twitter"] {
+.person .social a[href*="//twitter.com"] {
 	background-color: #00ABF0;
 }
 
-.person .social a[href*="google"] {
+.person .social a[href*="//plus.google.com"] {
 	background-color: #A92A24;
 }
 
-.person .social a[href*="linkedin"] {
+.person .social a[href*="//linkedin.com"] {
 	background-color: black;
-}
-
-@media screen and (min-width: 850px) {
-	.person a[itemprop="email"]:before {
-		content: "Email: ";
-	}
-
-	.person span[itemprop="telephone"]:before {
-		content: "Phone: ";
-	}
-}
-
-@media screen and (max-width: 800px) {
-	.container {
-		width: 100%;
-		margin: none;
-	}
 }
 
 .col2.right .person {
@@ -211,4 +201,30 @@ h1, h2, a, span {
 
 .meEditor form label {
 	font-size: 19px;
+}
+
+/*
+ ********************
+ * =media queries
+ ********************
+*/
+
+@media screen and (min-width: 850px) {
+	.person a[itemprop="email"]:before {
+		content: "Email: ";
+	}
+
+	.person span[itemprop="telephone"]:before {
+		content: "Phone: ";
+	}
+}
+
+@media screen and (max-width: 800px) {
+	body {
+		margin: 0;
+	}
+
+	.person .social {
+		display: none;
+	}
 }
