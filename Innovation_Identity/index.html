@@ -1,0 +1,219 @@
+<html>
+<head>
+	<title>Innovation Identity</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link async href='http://fonts.googleapis.com/css?family=Actor' rel='stylesheet' type='text/css'>
+	<link async rel="stylesheet" type="text/css" href="css/icomoon.css">
+</head>
+<body>
+<!-- TODO: you do not need a wrapper element here.They are wrapped by the body -->
+	<article class="profiles">
+		<header class="mainHeader">
+			<h1 class="whiteText">Innovation Identity</h1>
+		</header>
+		<div class="col2 left">
+			<section itemscope itemtype="http://data-vocabulary.org/Person" class="person me vcard" draggable>
+				<figure>
+					<img src="img/robert_white.jpg" alt="Robert White in all his glory." itemprop="image">
+				</figure>
+				<div class="profileInfo">
+					<header>
+						<h1 itemprop="name">Robert White</h1>
+						<h2 itemprop="jobTitle">Junior Software Engineer</h2>
+					</header>
+					<a href="mailto:me@rob.pw" class="icon-mail" itemprop="email">me@rob.pw</a>
+					<span class="icon-mobile" itemprop="telephone">0800 001066</span>
+					<!-- maybe have this as an inline list instead of div -->
+					<div class="social">
+						<a href="https://facebook.com" test="facebook" class="icon-facebook" itemprop="url"></a>
+						<a href="https://twitter.com" class="icon-twitter" itemprop="url"></a>
+						<a href="https://plus.google.com" class="icon-googleplus" itemprop="url"></a>
+						<a href="https://linkedin.com" class="icon-linkedin" itemprop="url"></a>
+					</div>
+				</div>
+			</section>
+
+			<section class="meEditor">
+				<section class="interests">
+					<header>
+						<h1 class="whiteText">My Hobbies/Interests</h1>
+					</header>
+					<ul>
+						<li>Free climbing / bouldering</li>
+						<li>Learning Javascript</li>
+						<li>Solo traveling</li>
+						<li>Teaching</li>
+					</ul>
+				</section>
+				<section class="favouriteVideo">
+					<header>
+						<h1>My Favourite Video</h1>
+					</header>
+					<!-- add different formats -->
+					<!-- add controls and autoplay -->
+					<video src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"></video>
+				</section>
+				<section class="myBackground">
+					<header>
+						<h1>My Background</h1>
+					</header>
+					<form action="">
+						<label for="education">Education
+						<!-- Not sure about the value of datalist in this scenario -->
+							<datalist id="educationList">
+								<select name="educationList">
+									<option value="The Minster School, Southwell">0</option>
+									<option value="Lowes Wong Primary School">1</option>
+									<option value="Nottingham High School">2</option>
+									<option value="Winchester Boys School">3</option>
+								</select>
+							</datalist>
+							<input type="text" name="education" list="educationList">
+						</label>
+						<table class="checkGroup">
+							<tr>
+								<td>
+								<!-- do not nest inputs in labels--> 
+									<label for="html">
+										<input name="html" type="checkbox" checked>HTML
+									</label>
+								</td>
+								<td>
+									<label for="javascript">
+										<input name="javascript" type="checkbox" checked>Javascript
+									</label>
+								</td>
+								<td>
+									<label for="python">
+										Python
+									</label>
+									<input name="python" type="checkbox" checked>Python
+								</td>
+								<td>
+									<label for="java">
+										<input name="java" type="checkbox" checked>Java
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label for="css">
+										<input name="css" type="checkbox" checked>CSS
+									</label>
+								</td>
+								<td>
+									<label for="php">
+										<input name="php" type="checkbox">PHP
+									</label>
+								</td>
+								<td>
+									<label for="sql">
+										<input name="sql" type="checkbox" checked>SQL
+									</label>
+								</td>
+								<td>
+									<label for="C++">
+										<input name="C++" type="checkbox">C++
+									</label>
+								</td>
+							</tr>
+						</table>
+						<textarea name="pastProjects" id="projects" cols="30" rows="10" placeholder="Tell us about one of your past projects..."></textarea>
+						<input type="submit" value="Save!">
+					</form>
+				</section>
+				<aside class="myQuote">
+					<!-- Implement this please -->
+				</aside>
+			</section>
+		</div>
+		<div class="col2 right">
+			<section itemscope itemtype="http://data-vocabulary.org/Person" class="person vcard">
+				<figure>
+					<img src="img/robert_white.jpg" alt="Robert White in all his glory." itemprop="image">
+				</figure>
+				<div class="profileInfo">
+					<header>
+						<h1 itemprop="name">Jack Hayter</h1>
+						<h2 itemprop="jobTitle">Junior Software Engineer</h2>
+					</header>
+					<a href="mailto:me@rob.pw" class="icon-mail" itemprop="email">me@rob.pw</a>
+					<span class="icon-mobile" itemprop="telephone">0800 001066</span>
+					<div class="social">
+						<a href="https://facebook.com" class="icon-facebook" itemprop="url"></a>
+						<a href="https://twitter.com" class="icon-twitter" itemprop="url"></a>
+						<a href="https://plus.google.com" class="icon-googleplus" itemprop="url"></a>
+						<a href="https://linkedin.com" class="icon-linkedin" itemprop="url"></a>
+					</div>
+				</div>
+			</section>
+
+			<section itemscope itemtype="http://data-vocabulary.org/Person" class="person vcard">
+				<figure>
+					<img src="img/robert_white.jpg" alt="Robert White in all his glory." itemprop="image">
+				</figure>
+				<div class="profileInfo">
+					<header>
+						<h1 itemprop="name">Robert White</h1>
+						<h2 itemprop="jobTitle">Junior Software Engineer</h2>
+					</header>
+					<a href="mailto:me@rob.pw" class="icon-mail" itemprop="email">me@rob.pw</a>
+					<span class="icon-mobile" itemprop="telephone">0800 001066</span>
+					<div class="social">
+						<a href="https://facebook.com" class="icon-facebook" itemprop="url"></a>
+						<a href="https://twitter.com" class="icon-twitter" itemprop="url"></a>
+						<a href="https://plus.google.com" class="icon-googleplus" itemprop="url"></a>
+						<a href="https://linkedin.com" class="icon-linkedin" itemprop="url"></a>
+					</div>
+				</div>
+			</section>
+
+			<section itemscope itemtype="http://data-vocabulary.org/Person" class="person vcard">
+				<figure>
+					<img src="img/robert_white.jpg" alt="Robert White in all his glory." itemprop="image">
+				</figure>
+				<div class="profileInfo">
+					<header>
+						<h1 itemprop="name">Robert White</h1>
+						<h2 itemprop="jobTitle">Junior Software Engineer</h2>
+					</header>
+					<a href="mailto:me@rob.pw" class="icon-mail" itemprop="email">me@rob.pw</a>
+					<span class="icon-mobile" itemprop="telephone">0800 001066</span>
+					<div class="social">
+						<a href="https://facebook.com" class="icon-facebook" itemprop="url"></a>
+						<a href="https://twitter.com" class="icon-twitter" itemprop="url"></a>
+						<a href="https://plus.google.com" class="icon-googleplus" itemprop="url"></a>
+						<a href="https://linkedin.com" class="icon-linkedin" itemprop="url"></a>
+					</div>
+				</div>
+			</section>
+
+			<section itemscope itemtype="http://data-vocabulary.org/Person" class="person vcard">
+				<figure>
+					<img src="img/robert_white.jpg" alt="Robert White in all his glory." itemprop="image">
+				</figure>
+				<div class="profileInfo">
+					<header>
+						<h1 itemprop="name">Robert White</h1>
+						<h2 itemprop="jobTitle">Junior Software Engineer</h2>
+					</header>
+					<a href="mailto:me@rob.pw" class="icon-mail" itemprop="email">me@rob.pw</a>
+					<span class="icon-mobile" itemprop="telephone">0800 001066</span>
+					<div class="social">
+						<a href="https://facebook.com" class="icon-facebook" itemprop="url"></a>
+						<a href="https://twitter.com" class="icon-twitter" itemprop="url"></a>
+						<a href="https://plus.google.com" class="icon-googleplus" itemprop="url"></a>
+						<a href="https://linkedin.com" class="icon-linkedin" itemprop="url"></a>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="clearfix"></div>
+		<footer class="mainFooter">
+			<h3 class="whiteText">Created by Rob P. White</h3>
+		</footer>
+	</article>
+	
+</body>
+</html>

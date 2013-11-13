@@ -1,0 +1,220 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.col2 {
+	width: 48%;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.whiteText {
+	color: #CCC;
+}
+
+body {
+	background-color: #CCC;
+}
+
+.profiles {
+	transition: width 0.1s linear;
+	width: 70%;
+	margin: 0 auto;
+}
+
+.mainHeader,
+.mainFooter {
+	background-color: #036;
+}
+
+.mainHeader h1 {
+	font-size: 40px;
+	padding: 15px 25px;
+}
+
+.mainFooter h3 {
+	text-align: right;
+	padding: 15px;
+}
+
+.col2.right {
+	display: flex;
+	height: 800px;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-content: space-between;
+}
+
+h1, h2, a, span {
+	font-family: 'Actor', sans-serif;
+}
+
+.person, 
+.meEditor {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 2%;
+	margin: 1% 2%;
+	background-color: #369;
+}
+
+/*
+ ********************
+ * =VCard
+ ********************
+*/
+
+.person {
+	background: #369;
+	min-width: 410px;
+	min-height: 135px;
+	height: 18%;
+	display: inline-block;
+	box-shadow: 2px 2px 3px #004360;
+	border: thin solid black;
+}
+
+.person figure {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 34%;
+	height: 100%;
+	padding-right: 3%;
+	margin-right: 3%;
+	border-right: 2px solid #5AABC9;
+}
+
+.person img {
+	max-width: 100%;
+	height: 100%;
+}
+
+.person .profileInfo {
+    display: inline-block;
+    width: 60%;
+    vertical-align: top;
+}
+
+.person h1 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #e9a700;
+}
+
+.person h2 {
+    font-size: 19px;
+    color: #f4c03d;
+}
+
+.person .profileInfo > a, .person .profileInfo > span {
+	display: block;
+	text-decoration: none;
+	color: #f4ce6e;
+} 
+
+.person .social {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1%;
+}
+
+.person .social a {
+	color: white;
+	border-radius: 5px;
+	padding: .5em 7%;
+	text-decoration: none;
+}
+
+.person .social a:hover {
+	box-shadow: 0px 0px 1px white;
+}
+
+.person .social a[href*="facebook"] {
+	background-color: #23476A;
+}
+
+.person .social a[href*="twitter"] {
+	background-color: #00ABF0;
+}
+
+.person .social a[href*="google"] {
+	background-color: #A92A24;
+}
+
+.person .social a[href*="linkedin"] {
+	background-color: black;
+}
+
+@media screen and (min-width: 850px) {
+	.person a[itemprop="email"]:before {
+		content: "Email: ";
+	}
+
+	.person span[itemprop="telephone"]:before {
+		content: "Phone: ";
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.container {
+		width: 100%;
+		margin: none;
+	}
+}
+
+.col2.right .person {
+	height: 22%;
+}
+
+.col2.right .person figure {
+	width: 45%;
+}
+
+.col2.right .person .profileInfo {
+	width: 50%;
+}
+
+/*
+ ********************
+ * =meEditor
+ ********************
+*/
+
+.meEditor video {
+	width: 100%;
+}
+
+.meEditor header h1 {
+	color: #CCC;
+	font-size: 25px;
+	margin-bottom: .5em;
+}
+
+.meEditor section {
+	padding: 15px 30px;
+	border-bottom: 2px solid #ccc;
+}
+
+.meEditor ul {
+	list-style: circle;
+}
+
+.meEditor table {
+	width: 100%;
+	margin: .5em 0;
+}
+
+.meEditor form label {
+	font-size: 19px;
+}
