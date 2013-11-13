@@ -5,7 +5,19 @@
 
 body {
 	background-color: #CCC;
-	margin: 0 15%;
+	/*margin: 0 15%;*/
+}
+
+.clearfix {
+	clear: both;
+}
+
+.whiteText {
+	color: #CCC;
+}
+
+h1, h2, a, span, label {
+	font-family: 'Actor', sans-serif;
 }
 
 /*
@@ -26,13 +38,18 @@ body {
 	float: right;
 }
 
-.clearfix {
-	clear: both;
+.col2.right {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-content: space-between;
 }
 
-.whiteText {
-	color: #CCC;
-}
+/*
+ ********************
+ * =header, footer, main
+ ********************
+*/
 
 .mainHeader,
 .mainFooter {
@@ -49,17 +66,6 @@ body {
 	padding: 15px;
 }
 
-.col2.right {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-	align-content: space-between;
-}
-
-h1, h2, a, span {
-	font-family: 'Actor', sans-serif;
-}
-
 .person, 
 .meEditor {
 	box-sizing: border-box;
@@ -67,6 +73,10 @@ h1, h2, a, span {
 	padding: 2%;
 	margin: 1% 2%;
 	background-color: #369;
+}
+
+main {
+	margin: 0 12%;
 }
 
 /*
@@ -220,7 +230,11 @@ h1, h2, a, span {
 }
 
 @media screen and (max-width: 800px) {
-	body {
+	/*body {
+		margin: 0;
+	}*/
+
+	main {
 		margin: 0;
 	}
 
